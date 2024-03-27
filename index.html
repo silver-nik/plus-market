@@ -8,11 +8,11 @@
     <title>Главная</title>
   
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240325183014">
-    <link rel="stylesheet" href="css/main.min.css?_v=20240325183014">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240327183904">
+    <link rel="stylesheet" href="css/main.min.css?_v=20240327183904">
   
-    <script defer="defer" src="js/main.min.js?_v=20240325183014"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js?_v=20240325183014"></script>
+    <script defer="defer" src="js/main.min.js?_v=20240327183904"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js?_v=20240327183904"></script>
 
 </head>
   <body>
@@ -133,7 +133,7 @@
 
                     <ul class="d-flex action-icons main__action">
 
-                        <div class="header-logo hidden-md">
+                        <div class="hidden-md header-logo">
                             <img class="logo__image" src="./images/logo-plus.svg" alt="#">
                             <img src="./images/PlusMarket.svg" alt="PlusMarket" class="logo__name">
                         </div>        
@@ -490,7 +490,10 @@
         <h2>Популярные товары</h2>
 
         <div class="d-flex j-between">
-            <a href="#" class="d-flex items-center popular__all-btn">Все товары</a>
+            <a href="#" class="d-flex items-center popular__all-btn">
+                <span class="hidden-sm">Все товары</span>
+                <span class="hidden-md">Все</span>
+            </a>
 
             <div class="d-flex j-between">
                 <div class="swiper-slider__btn nav-arrow-left popularProducts-left">
@@ -529,7 +532,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -585,14 +588,16 @@
                             <span class="product__date">Spring 23</span>
                         </div>
     
-                        <div class="product__price-block">
+                        <div class="d-flex items-center product__price-block">
                             <span class="price__low">
                                 87 000
                             </span>
-                            <span class="prcie__old">
-                                380 000 ₽
-                            </span>
-                            <span class="price__discount">-16%</span>
+                           <div>
+                                <span class="prcie__old">
+                                    380 000 ₽
+                                </span>
+                                <span class="price__discount">-16%</span>
+                           </div>
                         </div>
     
                         <span class="d-flex prod-delivery product__order">
@@ -628,7 +633,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -716,7 +721,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -772,14 +777,16 @@
                             <span class="product__date">Spring 23</span>
                         </div>
     
-                        <div class="product__price-block">
+                        <div class="d-flex items-center product__price-block">
                             <span class="price__low">
                                 87 000
                             </span>
-                            <span class="prcie__old">
-                                380 000 ₽
-                            </span>
-                            <span class="price__discount">-16%</span>
+                           <div>
+                                <span class="prcie__old">
+                                    380 000 ₽
+                                </span>
+                                <span class="price__discount">-16%</span>
+                           </div>
                         </div>
     
                         <span class="d-flex prod-delivery product__order">
@@ -815,7 +822,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -889,6 +896,8 @@
 
         </div>
 
+        <div class="hidden-md swiper-pagination"></div>
+
     </div>
 
     </div>
@@ -903,7 +912,10 @@
         <h2>Горячие новинки</h2>
 
         <div class="d-flex j-between">
-            <a href="#" class="d-flex items-center popular__all-btn">Все товары</a>
+            <a href="#" class="d-flex items-center popular__all-btn">
+                <span class="hidden-sm">Все товары</span>
+                <span class="hidden-md">Все</span>
+            </a>
 
             <div class="d-flex j-between">
                 <div class="swiper-slider__btn nav-arrow-left newProducts-left">
@@ -924,6 +936,8 @@
 
     <div id="newProducts-slider" class="d-flex small-slider">
 
+        
+
         <div class="swiper-wrapper">
 
             <div class="d-flex d-column swiper-slide product-card">
@@ -942,7 +956,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -998,14 +1012,16 @@
                             <span class="product__date">Spring 23</span>
                         </div>
     
-                        <div class="product__price-block">
+                        <div class="d-flex items-center product__price-block">
                             <span class="price__low">
                                 87 000
                             </span>
-                            <span class="prcie__old">
-                                380 000 ₽
-                            </span>
-                            <span class="price__discount">-16%</span>
+                           <div>
+                                <span class="prcie__old">
+                                    380 000 ₽
+                                </span>
+                                <span class="price__discount">-16%</span>
+                           </div>
                         </div>
     
                         <span class="d-flex prod-delivery product__order">
@@ -1041,7 +1057,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -1129,7 +1145,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -1185,14 +1201,16 @@
                             <span class="product__date">Spring 23</span>
                         </div>
     
-                        <div class="product__price-block">
+                        <div class="d-flex items-center product__price-block">
                             <span class="price__low">
                                 87 000
                             </span>
-                            <span class="prcie__old">
-                                380 000 ₽
-                            </span>
-                            <span class="price__discount">-16%</span>
+                           <div>
+                                <span class="prcie__old">
+                                    380 000 ₽
+                                </span>
+                                <span class="price__discount">-16%</span>
+                           </div>
                         </div>
     
                         <span class="d-flex prod-delivery product__order">
@@ -1228,7 +1246,7 @@
                         </div>
     
                         <div class="d-flex items-center seller__data-bottom">
-                            <span class="seller__lifecycle">3 года на сайте</span>
+                            <span class="seller__lifecycle hidden-sm">3 года на сайте</span>
                             <span class="dot"></span>
                             <span class="seller__trades">10 234 сделки</span>
                         </div>
@@ -1302,6 +1320,8 @@
 
         </div>
 
+        <div class="hidden-md swiper-pagination"></div>
+    
     </div>
 
     </div>
@@ -1316,15 +1336,17 @@
 
         <div class="d-flex items-center d-column banner-data">
 
-            <pre class="d-flex items-center d-column banner__title">
-                <span class="opacity">Лучшая техника</span> по доступным ценам
-            </pre>
+            <span class="d-flex items-center d-column banner__title">
+                <span class="opacity">Лучшая техника</span>по доступным ценам
+            </span>
 
             <a href="#" class="d-flex items-center j-center banner__link">Смотреть каталог</a>
 
         </div>
 
-        <div class="d-flex j-between banner-advantages">
+        <div class="d-flex j-between banner-advantages scrollbar-hidden">
+
+            <div class="banner__wrapper">
 
             <div class="banner__item">
                 <span>Крутое описание преимущества №1</span>
@@ -1385,6 +1407,8 @@
                         <path d="M8.8698 17.94C7.3598 18.95 7.3598 20.61 8.8698 21.61C10.5898 22.76 13.4098 22.76 15.1298 21.61C16.6398 20.6 16.6398 18.94 15.1298 17.94C13.4198 16.79 10.5998 16.79 8.8698 17.94Z" fill="#57D67B"/>
                     </svg>
                 </div>
+            </div>
+
             </div>
 
         </div>
@@ -3651,11 +3675,11 @@
 
 </section>
 
-          <section class="p-relavtive sales">
+          <section class="sales">
 
     <div class="container">
 
-    <div class="sales-background">
+    <div class="p-relavtive sales-background">
 
         <picture><source srcset="./images/Geometry.webp" type="image/webp"><img src="./images/Geometry.png" class="sales-background__img" alt="/"></picture>
 
