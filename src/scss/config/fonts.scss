@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'Inter';
+	font-display: swap;
+	src: url("../fonts/Inter-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	font-display: swap;
+	src: url("../fonts/Inter-Regular.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-display: swap;
+	src: url("../") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Mazzard';
+    src: url('../fonts/Mazzard-Light.eot');
+    src: local('Mazzard Light'), local('Mazzard-Light'),
+    url('../fonts/Mazzard-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Mazzard-Light.woff2') format('woff2'),
+    url('../fonts/Mazzard-Light.woff') format('woff'),
+    url('../fonts/Mazzard-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard';
+    src: url('../fonts/Mazzard-Regular.eot');
+    src: local('Mazzard Regular'), local('Mazzard-Regular'),
+    url('../fonts/Mazzard-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Mazzard-Regular.woff2') format('woff2'),
+    url('../fonts/Mazzard-Regular.woff') format('woff'),
+    url('../fonts/Mazzard-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard';
+    src: url('../fonts/Mazzard-SemiBold.eot');
+    src: local('Mazzard SemiBold'), local('Mazzard-SemiBold'),
+    url('../fonts/Mazzard-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Mazzard-SemiBold.woff2') format('woff2'),
+    url('../fonts/Mazzard-SemiBold.woff') format('woff'),
+    url('../fonts/Mazzard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard';
+    src: url('../fonts/Mazzard-Bold.eot');
+    src: local('Mazzard Bold'), local('Mazzard-Bold'),
+    url('../fonts/Mazzard-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Mazzard-Bold.woff2') format('woff2'),
+    url('../fonts/Mazzard-Bold.woff') format('woff'),
+    url('../fonts/Mazzard-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard';
+    src: url('../fonts/Mazzard-Medium.eot');
+    src: local('Mazzard Medium'), local('Mazzard-Medium'),
+    url('../fonts/Mazzard-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Mazzard-Medium.woff2') format('woff2'),
+    url('../fonts/Mazzard-Medium.woff') format('woff'),
+    url('../fonts/Mazzard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

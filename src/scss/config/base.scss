@@ -1,0 +1,171 @@
+body {
+  font-family: 'Mazzard', sans-serif;
+  font-weight: 600;
+  color: #0D1322;
+  position: relative;
+  background: #F2F4F7;
+}
+
+input[type="button"], button, a {
+  outline: none;
+  text-decoration: none;
+  font-family: 'Mazzard', sans-serif;
+  font-weight: 600;
+}
+
+header {
+  background: #fff;
+}
+
+section, header, footer {
+  padding-bottom: 32px;
+
+  @media (max-width: $medium) {
+    padding-bottom: 24px;
+    overflow: hidden;
+  }
+
+  @media (max-width: $small) {
+      padding-bottom: 20px;
+      overflow: hidden;
+  }
+
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.container {
+  width: 1360px;
+
+  @media (max-width: $medium) {
+    max-width: 960px;
+    width: 100%;
+  }
+
+  @media (max-width: $small) {
+    // max-width: 343px;
+    width: 95%;
+  }
+
+  margin: 0 auto;
+}
+
+
+.p-relavtive {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.hidden-md {
+  display: none !important;
+}
+
+.hidden-xl {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: $medium) {
+  .hidden-sm {
+    display: flex !important;
+  }
+
+  .hidden-md {
+    display: none !important;
+  }
+
+  .hidden-xl {
+    display: flex !important;
+  }
+}
+
+
+@media (max-width: $small) {
+  .hidden-sm {
+    display: none !important;
+  }
+
+  .hidden-md {
+    display: flex !important;
+  }
+}
+
+
+// color 
+
+.__headerBlue-color {
+  color: #3971FF !important;
+}
+
+.muted {
+  color: #A4A7B0;
+}
+
+.text-bold {
+  font-weight: 600 !important;
+}
+
+.rounded-circle {
+  border-radius: 1000px;
+}
+
+.background-substrate {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 0 40px 40px;
+}
+
+
+.dot {
+  width: 2px;
+  height: 2px;
+  border-radius: 1000px;
+  background: #AEB1BA;
+  gap: 4px;
+  display: block;
+}
+
+.w-100 {
+  width: 100%;
+}

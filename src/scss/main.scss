@@ -1,0 +1,31 @@
+@use 'sass:math';
+
+/** Подключение шрифтов локально из папки "./src/fonts" */
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/** Обнуление */
+@import 'config/reset';
+
+/** Библиотеки */
+@import 'libs/swiper';
+
+/** Подключение custom scrollbar для всего сайта */
+@import 'config/scrollbar';
+
+/** Общие параметры, шаблоны(заготовки) и вспомогательные классы */
+@import 'config/base';
+
+/** Подключение стилей отдельных блоков и секций */
+@import 'components/header';
+@import 'components/main-sliders';
+@import 'components/categoryActions-menu';
+@import 'components/category-menu';
+@import 'components/catalog-small';
+@import 'components/banner';
+@import 'components/catalog-medium';
+@import 'components/table';
+@import 'components/benefits';
+@import 'components/sales';
