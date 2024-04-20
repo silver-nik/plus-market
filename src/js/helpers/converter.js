@@ -2,6 +2,7 @@ class Converter {
 
     static _USD = 93;
 
+
     static convertCurrencyToRub = (sum, currency) => {
 
         switch(currency) {

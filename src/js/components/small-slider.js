@@ -30,9 +30,9 @@ class SmallSlider {
                 slidesPerGroup: 2,
               },
               680: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 12,
-                slidesPerGroup: 3,
+                slidesPerGroup: 4,
               },
               1020: {
                 slidesPerView: 4,

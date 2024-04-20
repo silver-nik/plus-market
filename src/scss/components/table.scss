@@ -1,7 +1,7 @@
 .table {
 
     .container {
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             overflow-y: hidden;
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -15,7 +15,7 @@
         border-collapse: collapse;
         width: 100%;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
 
             tbody {
                 width: 100%;
@@ -39,7 +39,7 @@
         font-weight: 500;
         color: #AEB1BA;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             width: 21%;
         }
 
@@ -48,6 +48,10 @@
 
     &__product {
         width: 35%;
+
+        @media (max-width: $tablet) {
+            width: 32% !important;
+        }
 
         @media (max-width: $small) {
             width: 40% !important;
@@ -59,7 +63,7 @@
         width: 15%;
         padding: 0 24px;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             padding: 0;
         }
 
@@ -69,7 +73,7 @@
         width: 15%;
         padding: 0 24px;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             padding: 0;
         }
 
@@ -78,6 +82,10 @@
     &__avalible {
         width: 15%;
         padding: 0 24px;
+
+        @media (max-width: $tablet) {
+            padding: 0;
+        }
 
         @media (max-width: $small) {
             display: none;
@@ -88,7 +96,7 @@
     &__btns {
         width: 10%;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             display: none;
         }
 
@@ -96,7 +104,7 @@
 
     .table-item {
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
 
             // ?
 
@@ -109,7 +117,7 @@
             position: relative;
 
 
-            @media (max-width: $small) {
+            @media (max-width: $tablet) {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -128,7 +136,7 @@
                 padding-bottom: 16px;
                 align-items: center;
 
-                @media (max-width: $small) {
+                @media (max-width: $tablet) {
                    padding-bottom: 68px;
                    text-align: left;
                     padding: 0;
@@ -144,6 +152,10 @@
         &-product {
 
             display: flex;
+
+            @media (max-width: $tablet) {
+                width: 32%;
+            }
 
             @media (max-width: $small) {
                 width: 40%;
@@ -161,7 +173,7 @@
                 background: #fff;
                 margin-right: 12px;
 
-                @media (max-width: $small) {
+                @media (max-width: $tablet) {
                     width: 48px;
                     height: 48px;
                     border-radius :12px;
@@ -183,12 +195,21 @@
                 font-weight: 600;
                 margin: 12px 0;
 
-                @media (max-width: $small) {
+                @media (max-width: $tablet) {
                     font-size: 14px;
                     text-align: left;
                     margin: 0;
         
 
+                    span {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+
+                @media (max-width: $small) {
                     span {
                         overflow: hidden;
                         display: -webkit-box;
@@ -223,7 +244,7 @@
         &-count, &-cost, &-avalible, &-btns {
             padding: 0 24px;
 
-            @media (max-width: $small) {
+            @media (max-width: $tablet) {
                 padding: 0;
             }
 
@@ -236,7 +257,7 @@
         }
 
         &-btn {
-            @media (max-width: $small) {
+            @media (max-width: $tablet) {
                 left: 0;
                 bottom: -50px;
                 width: 100%;
@@ -247,7 +268,7 @@
 
     .table-item__count, .table-item__price {
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
 
             display: inline-block;
             text-align: left;
@@ -256,6 +277,7 @@
     }
 
     .table-item__dynamics-block {
+
         @media (max-width: $small) {
             font-size: 12px;
             flex-direction: column-reverse;
@@ -268,7 +290,7 @@
         font-size: 16px;
         font-weight: 600;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             font-size: 14px;
         }
 
@@ -304,7 +326,7 @@
         font-size: 14px;
         font-weight: 500;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             font-size: 12px;
             white-space: nowrap;
         }
@@ -336,7 +358,7 @@
             background: #D7E3FF;
             border-radius: 12px;
 
-            @media (max-width: $small) {
+            @media (max-width: $tablet) {
                 width: 100%;
             }
 

@@ -33,9 +33,9 @@ class MediumSlider {
                 slidesPerGroup: 2,
               },
               680: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 12,
-                slidesPerGroup: 3,
+                slidesPerGroup: 4,
               },
               1024: {
                 slidesPerView: 4,
@@ -44,6 +44,10 @@ class MediumSlider {
               1440: {
                 slidesPerView: 4,
                 slidesPerGroup: 4,
+                grid: {
+                  rows: 2,
+                  fill: 'row',
+                }
               },
             },
         })

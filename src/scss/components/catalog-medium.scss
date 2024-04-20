@@ -14,6 +14,13 @@ h2 {
     @media (max-width: $small) {
         flex-wrap: wrap;
     }
+
+    @media (max-width: $medium) {
+        flex-wrap: wrap;
+        .swiper-slider__btn {
+            display: none;
+        }
+    }
 }
 
 .filters__tabs-blur {
@@ -39,10 +46,11 @@ h2 {
         -webkit-overflow-scrolling: touch; 
     }
 
-    @media (max-width: 792px) {
+    @media (max-width: $medium) {
         order: 2;
         overflow-y: hidden;
         margin-top: 12px;
+        max-width: 100%;
 
 
         &::-webkit-scrollbar {
@@ -72,16 +80,26 @@ h2 {
             font-weight: 600;
             height: 48px;
             white-space: nowrap;
-            overflow-x: auto;
+            overflow-x: visible;
+            width: 100%;
             -webkit-overflow-scrolling: touch;
         }   
+        
 
     }
 
-    @media (min-width: 792px) {
-        order: initial; 
-        margin-top: 0;
-    } 
+    @media (max-width: $tablet) {
+        height: 40px;
+
+        .wrapper {
+            height: 40px;
+        }
+    }
+
+    // @media (min-width: 792px) {
+    //     order: initial; 
+    //     margin-top: 0;
+    // } 
 
 
     
@@ -97,6 +115,10 @@ h2 {
         justify-content: center;
         padding: 0 10px;
         white-space: nowrap;
+
+        @media (max-width: $tablet) {
+            height: 32px;
+        }
 
         &:hover {
             color: #0D1322;
@@ -139,7 +161,7 @@ h2 {
     margin:  0 auto;
     width: 1360px;
 
-    @media (max-width: $small) {
+    @media (max-width: $medium) {
         width: 100%;
         flex-wrap: wrap;
     }
@@ -185,10 +207,18 @@ h2 {
     margin-right: 0;
     height: 472px;
 
+    @media (max-width: $medium) {
+        height: 100%;
+    }
+
     .product-card__body {
         height: 432px;
 
-        @media (max-width: $small) {
+        @media (max-width: $medium) {
+            height: 379px;
+        }
+
+        @media (max-width: $tablet) {
             
             height: 275px;
 
@@ -196,7 +226,7 @@ h2 {
 
     }
 
-    @media (max-width: $small) {
+    @media (max-width: $tablet) {
        height: 100%;
 
         .seller__lifecycle {
@@ -209,7 +239,13 @@ h2 {
         width: 192px;
         height: 224px;
 
-        @media (max-width: $small) {
+        @media (max-width: $medium) {
+            width: 147px;
+            height: 172px;
+            object-fit: contain;
+        }
+
+        @media (max-width: $tablet) {
             width: 91px;
             height: 106px;
         }
@@ -222,7 +258,7 @@ h2 {
         height: 152px;
         padding-right: 20px;
 
-        @media (max-width: $small) {
+        @media (max-width: $tablet) {
             padding-top: 0;
             height: fit-content;
             padding-right: 12px;
@@ -241,7 +277,11 @@ h2 {
         .tag-sale {
             top: 228px;
 
-            @media (max-width: $small) {
+            @media (max-width: $medium) {
+                top: 172px;
+            }
+
+            @media (max-width: $tablet) {
                 top: 102px;
             }
 

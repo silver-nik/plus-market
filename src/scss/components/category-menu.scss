@@ -1,13 +1,27 @@
 .category-menu__list {
     margin-bottom: 32px;
 
-    @media (max-width: $small) {
+    @media (max-width: $tablet) {
 
-        margin-bottom: 20px;
+        margin-bottom: 29px;
 
         .container {
             margin: 0 auto;
         }
+
+        .wrapper-mob {
+            overflow-y: hidden;
+            gap: 18px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+        }
+    }
+
+    @media (max-width: $small) {
+        margin-bottom: 29px;
 
         .wrapper-mob {
             overflow-y: hidden;
@@ -29,6 +43,10 @@
         width: 80px;
     }
 
+    @media (max-width: $tablet) {
+        width: 100px;
+    }
+
     @media (max-width: $small) {
         width: 90px;
     }
@@ -44,7 +62,7 @@
         height: 56px;
     }
 
-    @media (max-width: $small) {
+    @media (max-width: $tablet) {
         width: 66px;
         height: 66px;
     }
@@ -61,7 +79,7 @@
         height: 80px;
     }
 
-    @media (max-width: $small) {
+    @media (max-width: $tablet) {
         width: 90px;
         height: 90px;
     }

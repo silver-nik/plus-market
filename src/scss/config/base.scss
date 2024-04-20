@@ -60,6 +60,11 @@ section, header, footer {
     width: 100%;
   }
 
+  @media (max-width: $tablet) {
+    max-width: 680px;
+    width: 100%;
+  }
+
   @media (max-width: $small) {
     // max-width: 343px;
     width: 95%;

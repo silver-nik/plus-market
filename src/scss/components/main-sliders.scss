@@ -1,7 +1,43 @@
+#swiperMainSlider3 {
+  display: none;
+}
+
+@media (max-width: $medium) {
+  #swiperMainSlider3 {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet) {
+  #swiperMainSlider2 {
+    display: none;
+  }
+
+  #swiperMainSlider3 {
+    display: flex;
+  }
+}
+
+@media (max-width: $tablet) {
+  .main-container .container {
+    flex-direction: column;
+  }
+
+}
+
 @media (max-width: $small) {
   .main-container .container {
     flex-direction: column;
   }
+
+  #swiperMainSlider3 {
+    display: none;
+  }
+
+  #swiperMainSlider2 {
+    display: flex;
+  }
+
 }
 
 #swiperMainSlider1 {
@@ -30,6 +66,13 @@
       border-right: 32px;
     }
 
+    @media (max-width: $tablet) {
+      width: 100%;
+      // max-width: 636px;
+      height: 268px;
+      border-right: 24px;
+    }
+
     @media (max-width: $small) {
       width: 100%;
       height: 343px;
@@ -45,7 +88,13 @@
   @media (max-width: $medium) {
     width: 638px;
     height: 268px;
-    border-right: 32px;
+    border-radius: 32px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 680px;
+    height: 268px;
+    border-right: 24px;
   }
 
   @media (max-width: $small) {
@@ -56,14 +105,20 @@
 
 }
 
-#swiperMainSlider2 {
+#swiperMainSlider2, #swiperMainSlider3 {
 
   width: 444px;
   position: relative;
 
   @media (max-width: $medium) {
     width: 310px;
-    border-right: 32px;
+    border-radius: 32px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 18px;
   }
 
   @media (max-width: $small) {
@@ -76,6 +131,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    @media (max-width: $tablet) {
+      flex-direction: row;
+    }
 
     @media (max-width: $small) {
       flex-direction: row;
@@ -91,6 +150,10 @@
       width: 100%;
     }
 
+    @media (max-width: $tablet) {
+      width: 24%;
+    }
+
     @media (max-width: $small) {
       width: 48%;
     }
@@ -104,6 +167,10 @@
       height: 268px;
     }
 
+    @media (max-width: $tablet) {
+      height: 165px;
+    }
+    
     @media (max-width: $small) {
       height: 165px;
     }
@@ -115,6 +182,10 @@
 
     @media (max-width: $medium) {
       height: 130px;
+    }
+
+    @media (max-width: $tablet) {
+      height: 165px;
     }
 
     @media (max-width: $small) {
@@ -142,7 +213,7 @@
   width: 40px;
   height: 40px;
 
-  @media (max-width: $small) {
+  @media (max-width: $tablet) {
     display: none;
   }
 

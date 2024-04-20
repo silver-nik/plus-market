@@ -11,7 +11,6 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 import BaseHelpers from './helpers/BaseHelpers';
-import Services from './helpers/services';
 
 import './components/catalog-small';
 import './components/main-sliders';
@@ -22,8 +21,6 @@ BaseHelpers.addTouchClass();
 
 BaseHelpers.addLoadedClass();
 
-Services.getAllCategories()
-    .then(categories => console.log(categories))
 /**
  *  Библиотека для анимаций
  *  документация: https://michalsnik.github.io/aos

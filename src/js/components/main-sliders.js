@@ -140,6 +140,16 @@ const swiper2 = new Swiper('#swiperMainSlider2', {
     pagination: mainSliders.pagination,
 })
 
+const swiper3 = new Swiper('#swiperMainSlider3', {
+  loop: true,
+  slidesPerGroup: 1,
+  watchSlidesProgress: true,
+  autoplay: mainSliders.autoplay,
+  effect: 'fade',
+  pagination: mainSliders.pagination,
+})
+
+
 // new Swiper('#popular-slider', {
 //     loop: true,
 //     noSwipingClass: 'no-swiping-class',
@@ -212,45 +222,45 @@ const swiper2 = new Swiper('#swiperMainSlider2', {
 //   },
 // });
 
-new Swiper('#collection-slider', {
-  lazy: true,
-  noSwipingClass: 'no-swiping-class',
-  slidesPerView: 4,
-  spaceBetween: 8,
-  navigation: {
-    nextEl: '.collection-slider-next',
-    prevEl: '.collection-slider-prev',
-    disabledClass: 'no',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    bulletActiveClass: 'swiper-pagination-bullet-active',
-  },
-  grid: {
-    rows: 2,
-    fill: 'row',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    680: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-      slidesPerGroup: 3,
-    },
-    1024: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-    1440: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-  },
-})
+// new Swiper('#collection-slider', {
+//   lazy: true,
+//   noSwipingClass: 'no-swiping-class',
+//   slidesPerView: 4,
+//   spaceBetween: 8,
+//   navigation: {
+//     nextEl: '.collection-slider-next',
+//     prevEl: '.collection-slider-prev',
+//     disabledClass: 'no',
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//     bulletActiveClass: 'swiper-pagination-bullet-active',
+//   },
+//   grid: {
+//     rows: 2,
+//     fill: 'row',
+//   },
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 2,
+//       slidesPerGroup: 2,
+//     },
+//     680: {
+//       slidesPerView: 3,
+//       spaceBetween: 12,
+//       slidesPerGroup: 3,
+//     },
+//     1024: {
+//       slidesPerView: 4,
+//       slidesPerGroup: 4,
+//     },
+//     1440: {
+//       slidesPerView: 4,
+//       slidesPerGroup: 4,
+//     },
+//   },
+// })
 
 new Swiper('#benefits-slider', {
   loop: true,
@@ -313,8 +323,8 @@ new Swiper('#sales-slider', {
       slidesPerGroup: 3,
     },
     1024: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     1440: {
       slidesPerView: 4,
@@ -333,6 +343,12 @@ const primarySwiperPagination2 = new SliderPaginationProgress(
     swiper2,
     mainSliders.autoplay.delay / 1000,
     mainSliders.pagination
+)
+
+const primarySwiperPagination3 = new SliderPaginationProgress(
+  swiper3,
+  mainSliders.autoplay.delay / 1000,
+  mainSliders.pagination
 )
 
 
