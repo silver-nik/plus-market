@@ -11,6 +11,8 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 import BaseHelpers from './helpers/BaseHelpers';
+import ModalOpen from './helpers/ModalOpen';
+
 
 import './components/catalog-small';
 import './components/main-sliders';
@@ -20,6 +22,8 @@ BaseHelpers.checkWebpSupport();
 BaseHelpers.addTouchClass();
 
 BaseHelpers.addLoadedClass();
+
+new ModalOpen('.catalog-btn', '.close-btn', '.catalog-modal', 'active').addEventToTrigger();
 
 /**
  *  Библиотека для анимаций
