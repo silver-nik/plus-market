@@ -17,8 +17,7 @@ header {
   background: #fff;
 }
 
-section, header, footer {
-  padding-bottom: 32px;
+section, footer {
 
   @media (max-width: $medium) {
     padding-bottom: 24px;
@@ -30,6 +29,10 @@ section, header, footer {
       overflow: hidden;
   }
 
+}
+
+section, header, footer {
+  padding-bottom: 32px;
 }
 
 .d-flex {
@@ -173,4 +176,21 @@ section, header, footer {
 
 .w-100 {
   width: 100%;
+}
+
+.overlay {
+  background: #000;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
 }

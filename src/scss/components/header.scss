@@ -1,5 +1,9 @@
 header {
 
+  position: relative;
+  z-index: 20;
+
+
   .benefits {
 
     justify-content: center;
@@ -134,21 +138,39 @@ header {
   }
 
   .header-main__menu {
+    @media (max-width: $small) {
+      padding-top: 14px;
+    }
+  }
+
+  .header-main__menu, .catalog-mobile {
 
     font-size: 14px;
     font-weight: 600;
 
-    @media (max-width: $small) {
-      padding-top: 14px;
-    }
     
 
     .header-logo {
       display: flex;
+
+      @media (max-width: $xs) {
+
+        width: 35px;
+        height: 35px;
+
+      }
+
     }
 
     .logo__name {
       margin-left: 11px;
+
+      @media (max-width: $xs) {
+
+        width: 138px;
+
+      }
+
     }
 
     .main__actions {
@@ -187,6 +209,37 @@ header {
       color: #fff;
       margin: 0 12px 0 32px;
       gap: 6px;
+
+      .open-icon {
+        display: flex;
+        width: 20px;
+        height: 20px;
+      }
+
+      .close-icon {
+        display: none;
+        width: 20px;
+        height: 20px;
+      }
+
+      &.active {
+        border: 1px solid rgb(222, 225, 233);
+        background: #fff;
+        color: #0D1322;
+
+        &:hover {
+          background: #fff;
+        }
+
+        .open-icon {
+          display: none;
+        }
+
+        .close-icon {
+          display: flex;
+        }
+
+      }
 
       @media (max-width: $tablet) {
         margin: 0;

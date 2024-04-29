@@ -4,6 +4,7 @@
     @media (max-width: $tablet) {
 
         margin-bottom: 29px;
+        padding-bottom: 24px;
 
         .container {
             margin: 0 auto;
@@ -36,7 +37,7 @@
 
 }
 
-.category-item, .category-item img {
+.category-item {
     width: 120px;
 
     @media (max-width: $medium) {

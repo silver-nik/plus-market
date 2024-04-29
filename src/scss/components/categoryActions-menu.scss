@@ -1,4 +1,4 @@
-.categories {
+.categories, .catalog-mobile {
 
     @media (max-width: $medium) {
         padding-top: 20px;
@@ -13,7 +13,7 @@
         }
     }
 
-    .categories-actions {
+    .categories-actions, .catalog-mobile__slider {
 
         justify-content: space-between;
 
