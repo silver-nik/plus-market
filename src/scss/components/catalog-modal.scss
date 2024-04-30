@@ -288,6 +288,12 @@
                     width: 100%;
                     justify-content: space-between;
 
+                    div {
+                        display: flex;
+                        align-items:center;
+                        gap: 4px;
+                    }
+
                     @media(max-width: $xs) {
                         margin: 16px 0;
                     }
