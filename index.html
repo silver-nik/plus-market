@@ -8,11 +8,11 @@
     <title>Главная</title>
   
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240430153129">
-    <link rel="stylesheet" href="css/main.min.css?_v=20240430153129">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240503184313">
+    <link rel="stylesheet" href="css/main.min.css?_v=20240503184313">
   
-    <script defer="defer" src="js/main.min.js?_v=20240430153129"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js?_v=20240430153129"></script>
+    <script defer="defer" src="js/main.min.js?_v=20240503184313"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js?_v=20240503184313"></script>
 
 </head>
   <body>
@@ -170,7 +170,7 @@
 
             </div>
 
-            <div class="catalog-modal hidden">
+            <div class="hidden catalog-modal">
                 <div class="catalog-modal__container">
 
                     <div class="catalog">
@@ -384,6 +384,9 @@
 
                     <div class="catalog-mobile">
                         <div class="d-flex catalog-mobile__header p-relavtive">
+                            <button class="hidden back-btn">
+                                <img src="../images/arrow-slider.svg" alt="" srcset="">
+                            </button>
                             <span class="catalog-title">Каталог</span>
                             <button class="p-absolute close-btn">
                                 <img src="./images/Shape12.svg" alt="">
@@ -391,167 +394,173 @@
                         </div>
                         <div class="catalog-mobile__body">
 
-                            <div class="catalog-mobile__links">
+                            <div class="catalog-mobile__wrapper">
+                                <div class="catalog-mobile__links">
 
-                                <div class="main__action search-input">
+                                    <div class="main__action search-input">
+        
+                                        <div class="d-flex search-input__custom">
+                
+                                            <div class="d-flex search__filter">
+                                                <ul>
+                                                    <li>По всему сайту</li>
+                                                </ul>
+                                                <img src="./images/arrow-down.svg" alt="">
+                                            </div>
+                
+                                            <div class="search__block">
+                
+                                                <input type="text" name="" id="" class="search" placeholder="Искать среди 10 000 товаров">
+                
+                                                <img src="./images/search-normal.svg" alt="search">
+                
+                                            </div>
+                
+                                        </div>
+                                    </div>
     
-                                    <div class="d-flex search-input__custom">
-            
-                                        <div class="d-flex search__filter">
-                                            <ul>
-                                                <li>По всему сайту</li>
-                                            </ul>
-                                            <img src="./images/arrow-down.svg" alt="">
-                                        </div>
-            
-                                        <div class="search__block">
-            
-                                            <input type="text" name="" id="" class="search" placeholder="Искать среди 10 000 товаров">
-            
-                                            <img src="./images/search-normal.svg" alt="search">
-            
-                                        </div>
-            
+                                    <div class="catalog-mobile__links-list">
+                                        <a href="#" index="0" catalog-name="Полный каталог" class="d-flex catalog-mobile__link">
+                                            <div class="d-flex link-container">
+                                                <div>
+                                                    <img src="./images/box.svg" alt="" srcset="">
+                                                    <span class="title">Полный каталог</span>
+                                                    <span class="counter">9 378</span>
+                                                </div>
+                                                <div class="arrow-right-icon shrink-0"></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" index="0" catalog-name="Сниженные цены" class="d-flex catalog-mobile__link">
+                                            <div class="d-flex link-container">
+                                                <div>
+                                                    <img src="./images/box.svg" alt="" srcset="">
+                                                    <span class="title">Сниженные цены</span>
+                                                    <span class="counter">9 378</span>
+                                                </div>
+                                                <div class="arrow-right-icon shrink-0"></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" index="0" catalog-name="Последнее поступление" class="d-flex catalog-mobile__link">
+                                            <div class="d-flex link-container">
+                                                <div>
+                                                    <img src="./images/box.svg" alt="" srcset="">
+                                                    <span class="title">Последнее поступление</span>
+                                                    <span class="counter">9 378</span>
+                                                </div>
+                                                <div class="arrow-right-icon shrink-0"></div>
+                                            </div>
+                                        </a>
+                                        <a href="#" index="0" catalog-name="Выбор покупателей" class="d-flex catalog-mobile__link">
+                                            <div class="d-flex link-container">
+                                                <div>
+                                                    <img src="./images/box.svg" alt="" srcset="">
+                                                    <span class="title">Выбор покупателей</span>
+                                                    <span class="counter">9 378</span>
+                                                </div>
+                                                <div class="arrow-right-icon shrink-0"></div>
+                                            </div>
+                                        </a>
+                                    </div>  
+    
+                                </div>
+    
+                                <div class="catalog-mobile__slider">
+                                    <div class="d-flex scrollbar-hidden categories-actions">
+    
+                                        <a href="#">
+                                
+                                            <div class="d-flex items-center d-column action-item p-relavtive">
+                                                <picture><source srcset="./images/BlockImage-1.webp," type="image/webp"><img src="./images/BlockImage-1.webp" alt="Категория" srcset=""></picture>
+                                                <span class="d-flex items-center p-absolute">Trade-In</span>
+                                            </div>
+                                
+                                        </a>
+                                
+                                        <a href="#">
+                                
+                                            <div class="d-flex items-center d-column action-item p-relavtive">
+                                                <picture><source srcset="./images/BlockImage-2.webp," type="image/webp"><img src="./images/BlockImage-2.webp" alt="Категория" srcset=""></picture>
+                                                <span class="d-flex items-center p-absolute">Продать свое</span>
+                                            </div>
+                                
+                                        </a>
+                                            
+                                        <a href="#">
+                                
+                                            <div class="d-flex items-center d-column action-item p-relavtive">
+                                                <picture><source srcset="./images/BlockImage-3.webp," type="image/webp"><img src="./images/BlockImage-3.webp" alt="Категория" srcset=""></picture>
+                                                <span class="d-flex items-center p-absolute">Залог</span>
+                                            </div>
+                                
+                                        </a>
+                                
+                                        <a href="#">
+                                
+                                            <div class="d-flex items-center d-column action-item p-relavtive">
+                                                <picture><source srcset="./images/BlockImage-4.webp," type="image/webp"><img src="./images/BlockImage-4.webp" alt="Категория" srcset=""></picture>
+                                                <span class="d-flex items-center p-absolute">Оценить</span>
+                                            </div>
+                                
+                                        </a>
+                                
+                                        <a href="#">
+                                
+                                            <div class="d-flex items-center d-column action-item p-relavtive">
+                                                <picture><source srcset="./images/BlockImage-5.webp," type="image/webp"><img src="./images/BlockImage-5.webp" alt="Категория" srcset=""></picture>
+                                                <span class="d-flex items-center p-absolute">Разбор гардероба</span>
+                                            </div>
+                                
+                                        </a>
+                                
+                                        <a href="#">
+                                
+                                            <div class="d-flex items-center d-column action-item p-relavtive">
+                                                <picture><source srcset="./images/BlockImage-6.webp," type="image/webp"><img src="./images/BlockImage-6.webp" alt="Категория" srcset=""></picture>
+                                                <span class="d-flex items-center p-absolute">Сервисы</span>
+                                            </div>
+                                
+                                        </a>
+                                
                                     </div>
                                 </div>
-
-                                <div class="catalog-mobile__links-list">
-                                    <a href="#" index="0" catalog-name="Полный каталог" class="d-flex catalog-mobile__link">
-                                        <div class="d-flex link-container">
-                                            <div>
-                                                <img src="./images/box.svg" alt="" srcset="">
-                                                <span class="title">Полный каталог</span>
-                                                <span class="counter">9 378</span>
-                                            </div>
-                                            <div class="arrow-right-icon shrink-0"></div>
+    
+                                <div class="catalog-mobile__contacts">
+                                    <div class="d-flex d-column contacts__container">
+                                        <spa class="contacts__info">8 (800) 700-63-01</spa>
+                                        <span class="contacts__time">Круглосуточно</span>
+                                    </div>
+                                    <div class="d-flex d-column contacts__container">
+                                        <span class="contacts__info md-font">Москва, Смоленский п-к, 25к1, 3-й этаж</span>
+                                        <span class="contacts__time">7:00 до 19:00 МСК</span>
+                                        <div class="contacts__btns">
+                                            <a href="#">Позвоните мне</a>
+                                            <a href="#">Перейти в чат</a>
                                         </div>
-                                    </a>
-                                    <a href="#" index="0" catalog-name="Полный каталог" class="d-flex catalog-mobile__link">
-                                        <div class="d-flex link-container">
-                                            <div>
-                                                <img src="./images/box.svg" alt="" srcset="">
-                                                <span class="title">Полный каталог</span>
-                                                <span class="counter">9 378</span>
-                                            </div>
-                                            <div class="arrow-right-icon shrink-0"></div>
-                                        </div>
-                                    </a>
-                                    <a href="#" index="0" catalog-name="Полный каталог" class="d-flex catalog-mobile__link">
-                                        <div class="d-flex link-container">
-                                            <div>
-                                                <img src="./images/box.svg" alt="" srcset="">
-                                                <span class="title">Полный каталог</span>
-                                                <span class="counter">9 378</span>
-                                            </div>
-                                            <div class="arrow-right-icon shrink-0"></div>
-                                        </div>
-                                    </a>
-                                    <a href="#" index="0" catalog-name="Полный каталог" class="d-flex catalog-mobile__link">
-                                        <div class="d-flex link-container">
-                                            <div>
-                                                <img src="./images/box.svg" alt="" srcset="">
-                                                <span class="title">Полный каталог</span>
-                                                <span class="counter">9 378</span>
-                                            </div>
-                                            <div class="arrow-right-icon shrink-0"></div>
-                                        </div>
-                                    </a>
-                                </div>  
-
-                            </div>
-
-                            <div class="catalog-mobile__slider">
-                                <div class="d-flex scrollbar-hidden categories-actions">
-
-                                    <a href="#">
-                            
-                                        <div class="d-flex items-center d-column action-item p-relavtive">
-                                            <picture><source srcset="./images/BlockImage-1.webp," type="image/webp"><img src="./images/BlockImage-1.webp" alt="Категория" srcset=""></picture>
-                                            <span class="d-flex items-center p-absolute">Trade-In</span>
-                                        </div>
-                            
-                                    </a>
-                            
-                                    <a href="#">
-                            
-                                        <div class="d-flex items-center d-column action-item p-relavtive">
-                                            <picture><source srcset="./images/BlockImage-2.webp," type="image/webp"><img src="./images/BlockImage-2.webp" alt="Категория" srcset=""></picture>
-                                            <span class="d-flex items-center p-absolute">Продать свое</span>
-                                        </div>
-                            
-                                    </a>
-                                        
-                                    <a href="#">
-                            
-                                        <div class="d-flex items-center d-column action-item p-relavtive">
-                                            <picture><source srcset="./images/BlockImage-3.webp," type="image/webp"><img src="./images/BlockImage-3.webp" alt="Категория" srcset=""></picture>
-                                            <span class="d-flex items-center p-absolute">Залог</span>
-                                        </div>
-                            
-                                    </a>
-                            
-                                    <a href="#">
-                            
-                                        <div class="d-flex items-center d-column action-item p-relavtive">
-                                            <picture><source srcset="./images/BlockImage-4.webp," type="image/webp"><img src="./images/BlockImage-4.webp" alt="Категория" srcset=""></picture>
-                                            <span class="d-flex items-center p-absolute">Оценить</span>
-                                        </div>
-                            
-                                    </a>
-                            
-                                    <a href="#">
-                            
-                                        <div class="d-flex items-center d-column action-item p-relavtive">
-                                            <picture><source srcset="./images/BlockImage-5.webp," type="image/webp"><img src="./images/BlockImage-5.webp" alt="Категория" srcset=""></picture>
-                                            <span class="d-flex items-center p-absolute">Разбор гардероба</span>
-                                        </div>
-                            
-                                    </a>
-                            
-                                    <a href="#">
-                            
-                                        <div class="d-flex items-center d-column action-item p-relavtive">
-                                            <picture><source srcset="./images/BlockImage-6.webp," type="image/webp"><img src="./images/BlockImage-6.webp" alt="Категория" srcset=""></picture>
-                                            <span class="d-flex items-center p-absolute">Сервисы</span>
-                                        </div>
-                            
-                                    </a>
-                            
-                                </div>
-                            </div>
-
-                            <div class="catalog-mobile__contacts">
-                                <div class="d-flex d-column contacts__container">
-                                    <spa class="contacts__info">8 (800) 700-63-01</spa>
-                                    <span class="contacts__time">Круглосуточно</span>
-                                </div>
-                                <div class="d-flex d-column contacts__container">
-                                    <span class="contacts__info md-font">Москва, Смоленский п-к, 25к1, 3-й этаж</span>
-                                    <span class="contacts__time">7:00 до 19:00 МСК</span>
-                                    <div class="contacts__btns">
-                                        <a href="#">Позвоните мне</a>
-                                        <a href="#">Перейти в чат</a>
                                     </div>
                                 </div>
+    
+                                <div class="catalog-mobile__tabs">
+                                    <a href="#" class="tab">
+                                        <span>Доставка</span>
+                                        <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
+                                    </a>
+                                    <a href="#" class="tab">
+                                        <span>Доставка</span>
+                                        <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
+                                    </a>
+                                    <a href="#" class="tab">
+                                        <span>Доставка</span>
+                                        <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
+                                    </a>
+                                    <a href="#" class="tab">
+                                        <span>Доставка</span>
+                                        <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div class="catalog-mobile__tabs">
-                                <a href="#" class="tab">
-                                    <span>Доставка</span>
-                                    <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
-                                </a>
-                                <a href="#" class="tab">
-                                    <span>Доставка</span>
-                                    <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
-                                </a>
-                                <a href="#" class="tab">
-                                    <span>Доставка</span>
-                                    <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
-                                </a>
-                                <a href="#" class="tab">
-                                    <span>Доставка</span>
-                                    <picture><source srcset="#" type="image/webp"><img src="#" alt=""></picture>
-                                </a>
+                            <div class="hidden catalog-mobile__submenu">
+                                
                             </div>
 
                         </div>
