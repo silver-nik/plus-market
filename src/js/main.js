@@ -16,6 +16,7 @@ import ModalOpen from './helpers/ModalOpen';
 
 import './components/catalog-small';
 import './components/main-sliders';
+import './components/catalog-modal';
 
 BaseHelpers.checkWebpSupport();
 
