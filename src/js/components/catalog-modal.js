@@ -1,10 +1,12 @@
 import Services from "../helpers/services"
 
+const defaultTitle = 'Каталог';
+
 const setCard = (name) => {
     return (`
         <div class="catalog-mobile__category-item">
             <div class="category-item__img">
-                <img src="../images/image-32.webp" alt="" srcset="">
+                <img src="./images/image-32.webp" alt="" srcset="">
             </div>
             <div class="category-item__wrapper">
                 <span class="category-item__title">${name}</span>
@@ -14,12 +16,35 @@ const setCard = (name) => {
     `)
 }
 
-let catalogModal = ({modal, triggers, limit, categoryName}) => {
+const clearSubMenu = () => {
+    const submenu = document.querySelector('.catalog-mobile__submenu');
+    submenu.innerHTML = '';
+};
+
+const setSubMenu = (categories) => {
+    const submenu = document.querySelector('.catalog-mobile__submenu');
+    return categories.map(cat => {
+        return submenu.innerHTML += setCard(cat);
+    });
+};
+
+const updateModalTitle = (titleWrapper, title = defaultTitle) => {
+    titleWrapper.textContent = title;
+};
+
+const toggleElementsVisibility = (wrapper, submenu, backBtn, showWrapper) => {
+    wrapper.classList.toggle('hidden', showWrapper);
+    submenu.classList.toggle('hidden', !showWrapper);
+    backBtn.classList.toggle('hidden', !showWrapper);
+};
+
+const catalogModal = ({modal, triggers}) => {
     const triggersArr = document.querySelectorAll(triggers);
     const modalContainer = document.querySelector(modal),
           modalTitle = modalContainer.querySelector('.catalog-title'),
-          modalClose = modalContainer.querySelectorAll('.close-btn'),
+          modalClose = modalContainer.querySelector('.close-btn'),
           modalBackBtn = modalContainer.querySelector('.back-btn');
+    
 
     triggersArr.forEach(el => {
         el.addEventListener('click', (e) => {
@@ -27,47 +52,27 @@ let catalogModal = ({modal, triggers, limit, categoryName}) => {
 
             Services.getAllCategories()
                 .then((categories, i) => {
-                    categories.map(cat => {
-                        modalContainer.querySelector('.catalog-mobile__submenu').innerHTML += setCard(cat)
-                    })
+
+                    clearSubMenu();
+                    setSubMenu(categories);
+
                 })
                 .then(() => {
-                    modalTitle.textContent = e.target.closest('[catalog-name]').getAttribute("catalog-name"); 
-                    modalBackBtn.classList.remove("hidden");
-
-                    modalContainer.querySelector('.catalog-mobile__wrapper').classList.add('hidden');
-                    modalContainer.querySelector('.catalog-mobile__submenu').classList.remove('hidden');
+                    updateModalTitle(modalTitle,  e.target.closest('[catalog-name]').getAttribute("catalog-name"));
+                    toggleElementsVisibility(modalContainer.querySelector('.catalog-mobile__wrapper'), modalContainer.querySelector('.catalog-mobile__submenu'), modalBackBtn, true);
                 })
         })
     })
-
-    modalClose.forEach(el => {
-        el.addEventListener('click', (e) => {
-            
-            modalTitle.textContent = 'Каталог'; 
-
-            modalContainer.querySelector('.catalog-mobile__wrapper').classList.remove('hidden');
-            modalContainer.querySelector('.catalog-mobile__submenu').classList.add('hidden');
-            modalContainer.querySelector('.catalog-mobile__submenu').innerHTML = '';
-
-            modalBackBtn.classList.add('hidden');
-
+    
+    try {
+        [modalClose, modalBackBtn].forEach(btn => {
+            btn.addEventListener('click', () => {
+                updateModalTitle(modalTitle);
+                toggleElementsVisibility(modalContainer.querySelector('.catalog-mobile__wrapper'), modalContainer.querySelector('.catalog-mobile__submenu'), modalBackBtn, false);
+                clearSubMenu();
+            });
         })
-    })
-
-    modalBackBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        modalTitle.textContent = 'Каталог'; 
-
-        modalContainer.querySelector('.catalog-mobile__wrapper').classList.remove('hidden');
-        modalContainer.querySelector('.catalog-mobile__submenu').classList.add('hidden');
-        modalContainer.querySelector('.catalog-mobile__submenu').innerHTML = '';
-
-        modalBackBtn.classList.add('hidden');
-
-    })
-   
+    } catch(e) {}
 
 }
 
