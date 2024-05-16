@@ -1,0 +1,20 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip342_7660">
+			<rect id="ya_market 1" width="24.000002" height="24.000002" transform="translate(-0.333252 0.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="ya_market 1" width="24.000002" height="24.000002" transform="translate(-0.333252 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip342_7660)">
+		<path id="Vector" d="M11.66 23.65C18.14 23.65 23.36 18.44 23.36 11.98C23.36 5.53 18.14 0.32 11.66 0.32C5.18 0.32 -0.05 5.53 -0.05 11.98C-0.13 18.44 5.18 23.65 11.66 23.65Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<mask id="mask342_7663" mask-type="alpha" maskUnits="userSpaceOnUse" x="-0.043945" y="0.323730" width="23.412964" height="23.328857">
+			<path id="Vector" d="M11.66 23.65C18.14 23.65 23.36 18.44 23.36 11.98C23.36 5.53 18.14 0.32 11.66 0.32C5.18 0.32 -0.05 5.53 -0.05 11.98C-0.13 18.44 5.18 23.65 11.66 23.65Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</mask>
+		<g mask="url(#mask342_7663)">
+			<path id="Vector" d="M5.88 6.7L-4.42 20.15L-1.69 23.26L5.96 13.15L5.18 18.67L9.47 20.15L14.7 11.83C14.47 13.38 14.08 16.96 17.51 18.05C22.9 19.68 27.58 10.04 29.76 5.14L26.64 3.51C24.22 8.56 20.48 14.16 18.99 13.77C17.51 13.38 18.84 8.64 19.7 5.61L19.7 5.53L14.94 3.9L9.24 13.15L10.02 8.1L5.88 6.7Z" fill="#F6D83B" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
