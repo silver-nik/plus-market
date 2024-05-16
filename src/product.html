@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Продукт'
+  })
+  <body>
+    <div class="overlay"></div>
+    <div class="wrapper">
+      @@include('html/header.html')
+
+      @@include('html/breadcrumbs.html')
+
+      <main class="page">
+
+        <div data-observ></div>
+
+          <div class="p-relavtive">
+
+            @@include('html/product-name.html')
+            <!-- @@include('html/main-sliders.html')
+
+            @@include('html/categoryActions-menu.html')
+
+            @@include('html/category-menu.html') -->
+
+          </div>
+
+          @@include('html/table-sellers.html')
+
+          @@include('html/catalog-small.html')
+
+          @@include('html/catalog-small-newProducts.html')
+
+          @@include('html/banner.html')
+
+          @@include('html/catalog-medium.html')
+
+          @@include('html/banner-2.html')
+
+          @@include('html/table.html')
+
+          @@include('html/benfits.html')
+
+          @@include('html/sales.html')
+
+      </main>
+
+    </div>
+
+  </body>
+</html>
