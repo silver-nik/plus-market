@@ -122,7 +122,56 @@ const mainSliders = {
     },
 }
 
-const swiper = new Swiper('#swiperMainSlider1', {
+if(document.querySelector('#swiperThumb')) {
+  const sliderThumbs = new Swiper('#swiperThumb', {
+    direction: 'horizontal',
+    freeMode: true,
+    breakpoints: {
+      0: {
+        direction: 'horizontal',
+      },
+      768: {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+      },
+      1024: {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+      },
+    },
+    on: {
+      afterInit: function () {
+        // document.getElementById('swiper1').classList.remove('hidden')
+      },
+    },
+  })
+  
+  const sliderImages = new Swiper('#swiperThumbMain', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    mousewheel: true,
+    currentClass: 'swiper-pagination-bullet-active',
+    thumbs: {
+      swiper: sliderThumbs,
+    },
+    navigation: {
+      nextEl: '.product__slider-container .swiper-button-next',
+      prevEl: '.product__slider-container .swiper-button-prev',
+    },
+    pagination: {
+      el: '.product__slider-container .swiper-pagination',
+      clickable: true,
+    },
+    on: {
+      init: function () {
+        // document.getElementById('swiper2').classList.remove('hidden')
+      },
+    },
+  })
+}
+
+if(document.querySelector('#swiperMainSlider1') && document.querySelector('#swiperMainSlider2') && document.querySelector('#swiperMainSlider3')) {
+  const swiper = new Swiper('#swiperMainSlider1', {
     loop: true,
     effect: 'fade',
     autoplay: mainSliders.autoplay,
@@ -148,6 +197,26 @@ const swiper3 = new Swiper('#swiperMainSlider3', {
   effect: 'fade',
   pagination: mainSliders.pagination,
 })
+
+const primarySwiperPagination = new SliderPaginationProgress(
+  swiper,
+  mainSliders.autoplay.delay / 1000,
+  mainSliders.pagination
+)
+
+const primarySwiperPagination2 = new SliderPaginationProgress(
+  swiper2,
+  mainSliders.autoplay.delay / 1000,
+  mainSliders.pagination
+)
+
+const primarySwiperPagination3 = new SliderPaginationProgress(
+swiper3,
+mainSliders.autoplay.delay / 1000,
+mainSliders.pagination
+)
+
+}
 
 
 // new Swiper('#popular-slider', {
@@ -297,59 +366,61 @@ new Swiper('#benefits-slider', {
   },
 });
 
-new Swiper('#sales-slider', {
-  loop: true,
-  noSwipingClass: 'no-swiping-class',
-  slidesPerView: 4,
-  spaceBetween: 8,
-  navigation: {
-    nextEl: '.nav-arrow-right',
-    prevEl: '.nav-arrow-left',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    bulletActiveClass: 'swiper-pagination-bullet-current',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 12,
-      slidesPerGroup: 2,
+if(document.querySelector("#sales-slider")) {
+  new Swiper('#sales-slider', {
+    loop: true,
+    noSwipingClass: 'no-swiping-class',
+    slidesPerView: 4,
+    spaceBetween: 8,
+    navigation: {
+      nextEl: '.nav-arrow-right',
+      prevEl: '.nav-arrow-left',
     },
-    680: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-      slidesPerGroup: 3,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      bulletActiveClass: 'swiper-pagination-bullet-current',
     },
-    1024: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 12,
+        slidesPerGroup: 2,
+      },
+      680: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+        slidesPerGroup: 3,
+      },
+      1024: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
     },
-    1440: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-  },
-});
+  });
+}
 
-const primarySwiperPagination = new SliderPaginationProgress(
-    swiper,
-    mainSliders.autoplay.delay / 1000,
-    mainSliders.pagination
-)
+// const primarySwiperPagination = new SliderPaginationProgress(
+//     swiper,
+//     mainSliders.autoplay.delay / 1000,
+//     mainSliders.pagination
+// )
 
-const primarySwiperPagination2 = new SliderPaginationProgress(
-    swiper2,
-    mainSliders.autoplay.delay / 1000,
-    mainSliders.pagination
-)
+// const primarySwiperPagination2 = new SliderPaginationProgress(
+//     swiper2,
+//     mainSliders.autoplay.delay / 1000,
+//     mainSliders.pagination
+// )
 
-const primarySwiperPagination3 = new SliderPaginationProgress(
-  swiper3,
-  mainSliders.autoplay.delay / 1000,
-  mainSliders.pagination
-)
+// const primarySwiperPagination3 = new SliderPaginationProgress(
+//   swiper3,
+//   mainSliders.autoplay.delay / 1000,
+//   mainSliders.pagination
+// )
 
 
 window.addEventListener('resize', enableSlider);

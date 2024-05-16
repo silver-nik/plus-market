@@ -38,41 +38,43 @@ let setSlider = ({containerName, navObj = {}, categoryName, limitProducts, slide
 
 }
 
-setSlider({
+if(document.querySelector('#popular-slider') && document.querySelector('#newProducts-slider') && document.querySelector('#collection-slider')) {
+    setSlider({
 
-    containerName: "#popular-slider", 
-    navObj: {
-        nextBtn: '.popularProducts-right',
-        prevBtn: '.popularProducts-left'
-    },
-    categoryName: "electronics", 
-    limitProducts: 5,
-    sliderSize: ""
-
-})
-
-setSlider({
-
-    containerName: "#newProducts-slider", 
-    navObj: {
-        nextBtn: '.newProducts-right',
-        prevBtn: '.newProducts-left'
-    },
-    categoryName: "", 
-    limitProducts: "",
-    sliderSize: ""
-
-})
-
-setSlider({
-
-    containerName: "#collection-slider", 
-    navObj: {
-        nextBtn: '.collection-slider-next',
-        prevBtn: '.collection-slider-prev'
-    },
-    categoryName: "", 
-    limitProducts: "",
-    sliderSize: "md"
-
-})
+        containerName: "#popular-slider", 
+        navObj: {
+            nextBtn: '.popularProducts-right',
+            prevBtn: '.popularProducts-left'
+        },
+        categoryName: "electronics", 
+        limitProducts: 5,
+        sliderSize: ""
+    
+    })
+    
+    setSlider({
+    
+        containerName: "#newProducts-slider", 
+        navObj: {
+            nextBtn: '.newProducts-right',
+            prevBtn: '.newProducts-left'
+        },
+        categoryName: "", 
+        limitProducts: "",
+        sliderSize: ""
+    
+    })
+    
+    setSlider({
+    
+        containerName: "#collection-slider", 
+        navObj: {
+            nextBtn: '.collection-slider-next',
+            prevBtn: '.collection-slider-prev'
+        },
+        categoryName: "", 
+        limitProducts: "",
+        sliderSize: "md"
+    
+    })
+}
