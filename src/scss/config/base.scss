@@ -142,6 +142,54 @@ section, header, footer {
   color: #3971FF !important;
 }
 
+.__delivery-color {
+  color: rgb(255, 150, 55);
+  fill: rgb(255, 150, 55);
+
+  svg, path {
+    fill: rgb(255, 150, 55);
+  }
+
+}
+
+.__muted-color {
+  color: rgb(155, 155, 155);
+  fill: rgb(155, 155, 155);
+}
+
+.__bg-color-success {
+  background: rgb(221, 247, 229);
+}
+
+.__bg-color-error {
+  background: rgb(255, 229, 227);
+}
+
+.__color-success {
+  color: rgb(87, 214, 123);
+  fill: rgb(87, 214, 123);
+}
+
+.__color-error {
+  color: rgb(255, 71, 59);
+  color: rgb(255, 71, 59);
+}
+
+.__basic-tag {
+  border: 1px solid rgb(222, 225, 233);
+  border-radius: 10px;
+  height: 32px;
+  padding: 0 12px;
+  color: rgb(164, 167, 176);
+  font-family: 'Mazzard', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .muted {
   color: #A4A7B0;
 }
