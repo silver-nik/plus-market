@@ -1,0 +1,41 @@
+.breadcrumbs {
+    background: #fff;
+    border-radius: 0px 0px 32px 32px;
+
+    &__list {
+
+    }
+
+    &-item {
+        display: flex;
+
+        a {
+            color: rgb(155, 155, 155);
+            font-family: 'Mazzard', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 120%;
+        }
+
+        &::after {
+            content: url('../../images/breadcrumbs-arrow.svg');
+            display: flex;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            margin: 0 4px;
+        }
+
+    }
+
+    &-item:last-child {
+        a {
+            color: #000;
+        }
+
+        &::after {
+            content: '';
+        }
+    }
+    
+}
